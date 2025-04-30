@@ -17,7 +17,6 @@
       <nav
         class="navbar sticky-top navbar-expand-lg navbar-light bg-color:var(-bs-)"
       >
-        <!--用fixed-top加mainmenu的paddingTop 65px會呈現上面有空隙不會壓到字-->
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -131,14 +130,12 @@
           </div>
         </div>
       </nav>
-      <div class="container-fluid">
+      <div class="container-fluid position">
         <div class="row">
           <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            data-bs-interval="2000"
-            data-bs-wrap="true"
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"     
           >
             <div class="carousel-indicators">
               <button
@@ -240,7 +237,21 @@
             </button>
           </div>
         </div>
-        <hr />
+        <div class="bigSearchBar">
+          <div class="b3">Find amazing things to do</div>
+          <div class="b3">Plan better with 300,000+ travel experience.</div>
+          <form action="" style="text-align: center;">    
+            <div class="search-container">
+              <input name="" id="where" class="searchWhere" placeholder="Where to?" ></input>
+              <input name="" id="when" class="searchWhen" placeholder="When?" style="width:10rem;"></input>
+              <button type="button" class="btn btn-success rounded-circle me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></button>
+            </div>
+          </form>
+        </div>
+
+        <h3 class="cardTitle mt-5">日本旅遊精選</h3>
         <div class="row text-center justify-content-center animated rubberBand">
           <div class="card col-md-4 me-3 my-3" style="width: 26em">
             <div class="card-body d-flex flex-column">
@@ -337,7 +348,7 @@
         </div>
       </div>
 
-      <section id="footer">
+      <section id="footer" class="mt-5">
         <div class="container text-center">
           <p class="pt-4">關注我們</p>
           <div class="row">
